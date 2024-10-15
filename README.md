@@ -48,3 +48,25 @@ In this session, you’ll learn some basic CSS styling. This week you will work 
 Done with the tasks? Why not try the following to make your website look even better:
 - Try changing the font (either for the whole page or only for certain bits such as headings to make them stand out more)
 - Try changing the colour of the arrows on the slideshow
+- 
+
+# Week 4: Events Section
+In this session, we'll work more on other HTML and CSS! This week's focus is the events page. Try to complete the following tasks:
+
+1. Add the listed information to the past events table:
+   - [ ] In the events.html file, you will find all of the events in plaintext above the table. You have to:
+     - [ ] Create a row for every event entry
+     - [ ] Add the appropriate entry to the specific columns
+     - [ ] Format the table to what you want! (You can change the dimensions of the table, or the colour of the lines! If you want to add pictures too you can!)
+        
+2. Create a future events table and come up with innovative charity events to put in it!
+   - [ ] Create a new table in the right area, with these headers:
+      - [ ] Events
+      - [ ] Description
+      - [ ] Target Money Raised
+   - [ ] Create and fill the table with 3 new events!
+
+3. (EXTENSION) If you've finished all of this early, we can try adding some harder features to this page! You can try:
+  - [ ] Fitting both tables side by side: https://www.w3schools.com/howto/howto_css_table_side_by_side.asp
+  - [ ] (DIFFICULT) Trying to fit the tables onto dropdown menus: https://www.w3schools.com/css/css_dropdowns.asp
+  - [ ] (DIFFICULT) Adding some javascript for animations (e.g. making the tables spin once when entering the page!)
