@@ -12,25 +12,37 @@ li, a, button, .logo {
 	text-decoration: none;
 }
 
-#click {
-	display: none;
-}
-
 header {
-	position: absolute;
+	position: absolute;/* Fix position of the container */
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-between;/* Align text with adequate spacing*/
 	padding-top: 30px;
 	padding-bottom: 30px;
 	padding-left: 10%;
 	padding-right: 10%;
 	width: 100%;
-    background-color: #309b82
+    background-color: #37afeb
+}
+header .tickets{
+	position: absolute; /* Position relative to the container */
+    top: 10px; /* Add spacing from the top */
+    right: 10px; /* Add spacing from the right */
+    background-color: rgb(56, 61, 157); /* Customize button color */
+    border: none; /* Remove default border */
+    border-radius: 20%; /* Make the button round */
+    color: rgb(0, 0, 0); /* Text color */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: flex; /* Align text inside the button */
+    justify-content: center; /* Center text horizontally */
+}
+header .tickets:hover{
+	background-color: rgb(47, 150, 240); 
 }
 
 .nav_links {
 	list-style: none;
+	justify-content: center;
 }
 
 .nav_links li {
@@ -39,6 +51,7 @@ header {
 	padding-bottom: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
+	justify-content: center;
 }
 
 .nav_links li a {
@@ -49,35 +62,18 @@ header {
 	color: #0088A9;
 }
 
-button {
-	padding-top: 9px;
-	padding-bottom: 9px;
-	padding-left: 25px;
-	padding-right: 25px;
-	background-color: rgba(0, 136, 169, 1);
-    color: white;
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: rgba(0, 136, 169, 0.8);
-}
-
 .logo {
-	font-size: 20px;
-	font-weight: bold;
+    position: absolute; /* Position relative to the container */
+	top:25px;/* Padding from the top of the page */
+    left: 10px; /* Align to the left */
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #hero-section {
-    padding: 30px;
-    height: 100vh;
-    background-color: #409c87;
-    background-image: url('./Charity Images/pexels-rdne-6646918.jpg');
-	background-repeat: no-repeat;
-	background-position: top;
-	background-attachment: fixed;
+    padding: 30px; /* Padding between the navbar and main content */
+    height: 100vh; /* full viewport display */
+    background-color: #bcd2fb;
 	background-size: 100% 100%;
     flex-direction: column;
     flex: content;
@@ -93,9 +89,9 @@ button:hover {
 #link1-section {
 	padding: 30px;
     height: 100vh;
-    background-color: #2dc4a0;
-    /* flex-direction: column;
-    flex: content; */
+    background-color: #69c1df;
+    flex-direction: column;
+    flex: content;
     align-content: center;
 }
 
@@ -104,23 +100,20 @@ button:hover {
     align-content: center;
 }
 
-#bottom-section{
+#footer{
 	padding: 30px;
-    height: 100vh;
-    background-color: #01A982;
-    background-image: url('./Charity Images/pexels-suraphat-933624.jpg');
-	background-repeat: no-repeat;
+    background-color: #245bda;
 	background-position: top;
-	background-attachment: fixed;
 	background-size: 100% 100%;
     flex-direction: column;
     flex: content;
     align-content: center;
+	text-align: center;
 }
 
 #hero-section h1,#bottom-section h1 {
-    padding-bottom: 20px;
-	color: #f0f0f0;
+    padding-bottom: 10px;
+	padding-top: 40px;
 	font-size: 70px;
 	text-align: center;
 }
@@ -139,7 +132,6 @@ button:hover {
 	text-align: center;
 	position: relative;
 	left: 40%;	
-
 	justify-content: center;
 	background-color: #f0f0f0;
 	margin: 0;
@@ -159,15 +151,13 @@ button:hover {
 	border-radius: 5px;
 	box-sizing: border-box;
 }
-.card-form-container button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px 15px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	width: 100%;
-}
-.card-form-container button:hover {
-	background-color: #45a049;
+
+.card-form-container .close {
+    position: absolute; /* Position relative to the container */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    height: 50px;
+    width: 50px;
+    background-color: red; /* Optional styling for visibility */
+    cursor: pointer;
 }
