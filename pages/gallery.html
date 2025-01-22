@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="/styles/gallery-styles.css">
+</head>
+<body>
+
+  <div id="gallery-container">
+    <!-- Display the current image -->
+    <img id="current-image" src="/img/image-filler.png" alt="Gallery Image">
+    
+    <!-- Navigation buttons -->
+    <button class="nav-btn prev-btn">&#10094;</button>
+    <button class="nav-btn next-btn">&#10095;</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Array of image URLs
+      const images = [
+        "/img/image-filler.png",
+        "/img/image-filler.png",
+        "/img/image-filler.png",
+        "/img/image-filler.png"
+      ];
+
+      let currentIndex = 0;
+
+      // Function to update the image displayed
+      function updateImage() {
+        $("#current-image").attr("src", images[currentIndex]);
+      }
+      // Previous button click event
+      $(".prev-btn").click(function() {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateImage();
+      });
+
+      // Next button click event
+      $(".next-btn").click(function() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateImage();
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
