@@ -7,36 +7,38 @@
 # TASK 1: Team Brainstorm - Setting Priorities  
 
 > Work together as a team to review the list of ideas provided. Your challenge is to decide on the 5 most important tasks to focus on first.  
-💡 Think about what will make the biggest impact or what needs to be done before other steps can happen.
+>💡 Think about what will make the biggest impact or what needs to be done before other steps can happen.
 
 # TASK 2: Engineering - Build Your Website  
 
 > Now that your team has a plan, it’s time to bring it to life! Start building and designing your website using the tools available.  
 Below are some tasks you could tackle—don’t worry about completing them all. Instead, choose a couple to focus on first.   Once you’re happy with those, feel free to explore some of the trickier challenges.  
-💡 Divide the tasks so everyone has something to work on that suits their skills and interests.  
+>💡 Divide the tasks so everyone has something to work on that suits their skills and interests.  
 
 # HTML
 Changing The Title:
 
-* Find the title text wrapped in a <h1> tag and change it.
-* Change the text below the title to include a tagline for your subject.
+> * Find the title text wrapped in a *h1* tag and change it.
+> * Change the text below the title to include a tagline for your subject.
 
 Changing the description:
 
-* Change the header of the description section.
-* Change the description text to include a brief description of what you want.
+> * Change the header of the "Extra Information" section.
+> * Change the description text to include a brief description of the subject.
 
 Adding an image:
 
-* Using the <img> tag choose one of the images from the Charity Images folder to display below the description.
+> * Using the <*img*> tag, select an appropriate picture and place in the **img** folder to display below the tagline.
 
 Adding a hyperlink to subject website:
 
-* Using the <a> tag, add a hyperlink to your chosen charity's website.
+> * Using the <*a*> tag, add a hyperlink to your chosen subject's website i.e. brand/artist website.
 
 # CSS
 
-# JavaScript - Extension
+# JavaScript Gallery - Extension
+
+> * Update the `/img/image-filler.png` array with appropriate pictures representing your subject.
 
 # TASK 3: Stratigic Styling - Technical Marketing
 
@@ -45,5 +47,10 @@ Things to consider:
 > * Color schemes
 > * Fonts
 > * Images or graphics
-
 > 💡 Create a website that looks amazing and ties together all your ideas into one clear, cohesive theme.
+
+TO DO:
+
+* Finish adding tasks to README
+* Comment all code corresponding to tasks for easier navigation
+* Create an example of a completed website
