@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Donate</title>
+    <title>Book Tickets</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/book-styles.css">
 </head>
 
 <body>
@@ -17,17 +17,20 @@
         <div id="hero-section">
             <div class="card-form-container">
                 <button type="close" class="close">x</button>
-                <h2>Enter Your Card Details</h2>
-                <p>Please fill in the details below to complete your payment.</p>
+                <h2>Enter Your Details</h2>
+                <p>Please fill in the details below to complete your booking.</p>
                 <form>
-                    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="Cardholder Name"
+                    <input type="text" id="name" name="name" placeholder="Name"
                         required>
-                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" maxlength="19"
+                    <input type="email" id="email" name="email" placeholder="Email"
                         required>
-                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" maxlength="5"
-                        required>
-                    <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="4" required>
-                    <button type="submit">Submit Payment</button>
+                    <label for="date">Date:</label>
+                    <input type="text" id="date" name="date" placeholder="DD/MM/YY" maxlength="8" required>
+                    <label for="time">Select Time:</label>
+                    <select id="time" name="time" required>
+                    <option value="">--Select Time--</option>
+                    </select>
+                    <button type="submit" class="submit">Submit Booking</button>
                 </form>
             </div>
         </div>
@@ -38,11 +41,40 @@
             $('.close').on('click', function(){
                 window.location.href = '/pages/index.html';
             });
-            $('submit').on('click', function(){
-                alert('Submitted details!');
+            $('.submit').on('click', function(){
+                window.location.href = "/pages/index.html"
             });
+            const $select = $("#time");
+            for (let hour = 0; hour < 24; hour++) {
+            for (let minute = 0; minute < 60; minute += 30) { // Change 30 to a different interval if needed
+            const time = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+            $select.append(new Option(time, time));
+            }
+        }
         });
     </script>
+    <script>
+        document.getElementById("date").addEventListener("input", function (e) {
+          let input = e.target.value;
+          // Remove non-numeric characters except slashes
+          input = input.replace(/[^0-9/]/g, "");
+      
+          // Auto-insert slashes for formatting
+          if (input.length > 2 && input[2] !== '/') {
+            input = input.slice(0, 2) + '/' + input.slice(2);
+          }
+          if (input.length > 5 && input[5] !== '/') {
+            input = input.slice(0, 5) + '/' + input.slice(5);
+          }
+      
+          // Limit to "DD/MM/YY" format
+          if (input.length > 8) {
+            input = input.slice(0, 8);
+          }
+      
+          e.target.value = input;
+        });
+      </script>
 </body>
 
 </html>
