@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Book Tickets</title>
     <meta name="description" content="">
+    <!--Reference the the corresponding CSS document-->
     <link rel="stylesheet" href="/styles/book-styles.css">
 </head>
 
 <body>
     <header>
     </header>
-
     <main>
         <div id="hero-section">
+            <!--Extension: Customise this form to suit your website's needs-->
             <div class="card-form-container">
                 <button type="close" class="close">x</button>
                 <h2>Enter Your Details</h2>
@@ -37,6 +36,7 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+        //JavaScript(jQuery) code to add interactivity to the buttons
         $(document).ready(function(){
             $('.close').on('click', function(){
                 window.location.href = '/pages/index.html';
@@ -54,6 +54,7 @@
         });
     </script>
     <script>
+        //JavaScript(jQuery) code to add interactivity to the date selector
         document.getElementById("date").addEventListener("input", function (e) {
           let input = e.target.value;
           // Remove non-numeric characters except slashes

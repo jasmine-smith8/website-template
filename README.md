@@ -16,6 +16,9 @@ Below are some tasks you could tackle—don’t worry about completing them all.
 >💡 Divide the tasks so everyone has something to work on that suits their skills and interests.  
 
 # HTML
+
+> The files you need will be found in the `/pages/` folder. The tasks to complete will be highlighted in the **.html** files.
+
 Changing The Title:
 
 > * Find the title text wrapped in a *h1* tag and change it.
@@ -34,23 +37,23 @@ Adding a hyperlink to subject website:
 
 > * Using the <*a*> tag, add a hyperlink to your chosen subject's website i.e. brand/artist website.
 
-# CSS
-
 # JavaScript Gallery - Extension
 
 > * Update the `/img/image-filler.png` array with appropriate pictures representing your subject.
 
 # TASK 3: Stratigic Styling - Technical Marketing
 
-> Once your website layout is ready, it’s time to give it some personality! Use what you’ve learned in the technical marketing session to design a theme that reflects your topic perfectly.  
+> Now that your website content is ready, it’s time to give it some personality! Use what you’ve learned in the technical marketing session to design a theme that reflects your topic perfectly.  
 Things to consider:
 > * Color schemes
 > * Fonts
-> * Images or graphics
+> * Images or graphics  
 > 💡 Create a website that looks amazing and ties together all your ideas into one clear, cohesive theme.
+
+# CSS
+
+> In the `/styles/` folder, there are several corresponding style sheets for each of the pages. For this task, you will need update the theme colours. These will be highlighted in the **.css** files.
 
 TO DO:
 
-* Finish adding tasks to README
-* Comment all code corresponding to tasks for easier navigation
 * Create an example of a completed website

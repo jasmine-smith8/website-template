@@ -1,3 +1,4 @@
+/*===========================TASK 2==========================*/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -13,45 +14,48 @@ li, a, button, .logo {
 }
 
 header {
-	position: absolute;/* Fix position of the container */
+	position: relative;
 	display: flex;
-	justify-content: space-between;/* Align text with adequate spacing*/
+	justify-content: space-between;
+    align-items: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 3%;
+	padding-right: 3%;
 	width: 100%;
+    /*Task: Update theme colours*/
     background-color: #37afeb
 }
+
 header .tickets{
-	position: absolute; /* Position relative to the container */
-    top: 10px; /* Add spacing from the top */
-    right: 10px; /* Add spacing from the right */
-    background-color: rgb(56, 61, 157); /* Customize button color */
-    border: none; /* Remove default border */
-    border-radius: 20%; /* Make the button round */
+    /*Task: Update theme colours*/
+    position: relative; 
+    background-color: rgb(56, 61, 157); /* Button background color */
+    border: none;
+    border-radius: 50%; /* Round the button */
     color: rgb(0, 0, 0); /* Text color */
-    font-size: 16px; /* Text size */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer;
     display: flex; /* Align text inside the button */
-    justify-content: center; /* Center text horizontally */
+    text-decoration: none;
+    padding: 15px 25px; 
 }
+
 header .tickets:hover{
+    /*Task: Update theme colours*/
 	background-color: rgb(47, 150, 240); 
 }
 
 .nav_links {
 	list-style: none;
-	justify-content: center;
+    display: flex;
+	justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_links li {
 	display: inline-block;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	justify-content: center;
+    padding: 0 20px;
 }
 
 .nav_links li a {
@@ -63,16 +67,14 @@ header .tickets:hover{
 }
 
 .logo {
-    position: absolute; /* Position relative to the container */
-	top:25px;/* Padding from the top of the page */
-    left: 10px; /* Align to the left */
-    font-size: 20px;
-    font-weight: bold;
+    position: relative; /* Position relative to the container */
+    margin-right: auto;
 }
 
 #hero-section {
     padding: 50px; /* Padding between the navbar and main content */
     height: 100vh; /* full viewport display */
+    /*Task: Update theme colours*/
     background-color: #bcd2fb;
 	background-size: 100% 100%;
     flex-direction: column;
@@ -89,6 +91,7 @@ header .tickets:hover{
 #link1-section {
 	padding: 30px;
     height: 100vh;
+    /*Task: Update theme colours*/
     background-color: #69c1df;
     flex-direction: column;
     flex: content;
@@ -104,6 +107,7 @@ header .tickets:hover{
 
 #footer{
 	padding: 30px;
+    /*Task: Update theme colours*/
     background-color: #245bda;
 	background-position: top;
 	background-size: 100% 100%;
@@ -128,8 +132,9 @@ header .tickets:hover{
     display: flex;
     align-items: center; /* Centers vertically */
     justify-content: center; /* Centers horizontally */
-    width: 100vw; /* Full viewport width for testing */
-    height: 20vh; /* Full viewport height for testing */
+    width: 100vw; 
+    height: 20vh; 
+    /*Task: Update theme colours*/
 	background-color: #bcd2fb;
 }
 .image-section img {
@@ -137,5 +142,6 @@ header .tickets:hover{
     max-height: 100%;
     object-fit: contain; /* Ensures the image fits within the container */
 	position: relative; /* Use absolute positioning */
-    top: -500px; /* Move up by 50px */
+    top: -500px; /* Move up by 500px */
 }
+/*===========================TASK 2==========================*/
